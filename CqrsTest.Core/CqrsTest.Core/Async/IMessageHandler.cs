@@ -6,6 +6,6 @@ namespace CqrsTest.Core.Async
 {
 	public interface IMessageHandler<in TMessage> where TMessage : IMessage
 	{
-		Task<MessageResult> ExecuteAsync(TMessage message);
+		Task ExecuteAsync(TMessage message);
 	}
 }

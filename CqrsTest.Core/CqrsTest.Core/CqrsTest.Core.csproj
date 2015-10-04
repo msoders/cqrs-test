@@ -46,7 +46,6 @@
     <Compile Include="Async\IMessageDispatcher.cs" />
     <Compile Include="Async\IMessageHandler.cs" />
     <Compile Include="Async\MessageDispatcher.cs" />
-    <Compile Include="MessageResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

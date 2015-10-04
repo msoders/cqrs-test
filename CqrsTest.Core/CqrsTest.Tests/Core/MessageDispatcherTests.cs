@@ -20,10 +20,10 @@ namespace CqrsTest.Core.Tests
 		{
 			public Action<int> Callback { get; set; }
 
-			public Task<MessageResult> ExecuteAsync(TestMessage message)
+			public Task ExecuteAsync(TestMessage message)
 			{
 				Callback(message.Value);
-				return Task.FromResult(MessageResult.None);
+				return Task.FromResult(0);
 			}
 		}
 
