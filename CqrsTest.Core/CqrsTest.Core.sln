@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CqrsTest.Core", "CqrsTest.Core\CqrsTest.Core.csproj", "{099B5FE5-EA3A-4B4A-9ADD-5740700C4BB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CqrsTest.Tests", "CqrsTest.Tests\CqrsTest.Tests.csproj", "{FFE56EB6-47D5-419C-AB31-D799AED834B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{099B5FE5-EA3A-4B4A-9ADD-5740700C4BB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{099B5FE5-EA3A-4B4A-9ADD-5740700C4BB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{099B5FE5-EA3A-4B4A-9ADD-5740700C4BB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE56EB6-47D5-419C-AB31-D799AED834B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE56EB6-47D5-419C-AB31-D799AED834B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE56EB6-47D5-419C-AB31-D799AED834B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE56EB6-47D5-419C-AB31-D799AED834B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{099B5FE5-EA3A-4B4A-9ADD-5740700C4BB8}</ProjectGuid>
+    <ProjectGuid>{FFE56EB6-47D5-419C-AB31-D799AED834B8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CqrsTest.Core</RootNamespace>
-    <AssemblyName>CqrsTest.Core</AssemblyName>
+    <RootNamespace>CqrsTest.Tests</RootNamespace>
+    <AssemblyName>CqrsTest.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -33,6 +33,9 @@
     <Reference Include="Autofac">
       <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,15 +45,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMessage.cs" />
-    <Compile Include="Async\IMessageDispatcher.cs" />
-    <Compile Include="Async\IMessageHandler.cs" />
-    <Compile Include="Async\MessageDispatcher.cs" />
-    <Compile Include="MessageResult.cs" />
+    <Compile Include="Core\MessageDispatcherTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CqrsTest.Core\CqrsTest.Core.csproj">
+      <Project>{099b5fe5-ea3a-4b4a-9add-5740700c4bb8}</Project>
+      <Name>CqrsTest.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
