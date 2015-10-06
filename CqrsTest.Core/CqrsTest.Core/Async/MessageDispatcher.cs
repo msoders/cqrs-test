@@ -16,7 +16,16 @@ namespace CqrsTest.Core.Async
 
 		public Task DispatchAsync<TMessage>(TMessage message) where TMessage : IMessage
 		{
+			if (message == null)
+			{
+				throw new ArgumentNullException("message");
+			}
 			var handler = _lifetimeScope.Resolve<IMessageHandler<TMessage>>();
+
+			if (handler == null)
+			{
+				throw new InvalidOperationException("The handler for '" + typeof(TMessage) + "'is not registered");
+			}
 			return handler.ExecuteAsync(message);
 		}
 	}
